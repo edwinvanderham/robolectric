@@ -143,7 +143,7 @@ public class ShadowBitmapFactoryTest {
   }
 
   @Test
-  public void decodeBytesWithOptions_shouldSetDescriptionAndCreatedFrom() throws Exception {
+  public void decodeBytes_shouldSetDescriptionAndCreatedFromWithOptions() throws Exception {
     byte[] yummyBites = "Hi!".getBytes("UTF-8");
     BitmapFactory.Options options = new BitmapFactory.Options();
     Bitmap bitmap = BitmapFactory.decodeByteArray(yummyBites, 100, 100, options);
