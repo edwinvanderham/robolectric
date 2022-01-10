@@ -225,6 +225,8 @@ public class ShadowBitmapFactory {
       return null;
     }
     Bitmap bitmap = create(desc, opts, image);
+    ShadowBitmap shadowBitmap = Shadow.extract(bitmap);
+    shadowBitmap.createdFromBytes = data;
     return bitmap;
   }
 
